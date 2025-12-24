@@ -34,6 +34,7 @@ return new class extends Migration
 
             // Unique constraint untuk prevent duplicate assessment
             $table->unique(['inmate_id', 'month', 'year']);
+            $table->softDeletes();
         });
     }
 

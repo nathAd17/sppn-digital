@@ -33,6 +33,7 @@ return new class extends Migration
             $table->date('entry_date');
             $table->date('release_date')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
